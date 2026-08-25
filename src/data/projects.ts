@@ -1,5 +1,7 @@
 /**
- * PORTFOLIO DATA - EDIT THIS FILE TO UPDATE YOUR PROJECTS
+ * ============================================================
+ *  PORTFOLIO DATA - EDIT THIS FILE TO UPDATE YOUR PROJECTS
+ * ============================================================
  * Edit via GitHub → commit → website updates automatically
  */
 
@@ -22,7 +24,10 @@ export interface Certificate {
   issuer: string
   year: number
   description: string
-  image?: string
+  /** URL gambar sertifikat (path lokal /images/... atau URL eksternal) */
+  image: string
+  /** Optional: link ke PDF / halaman sertifikat */
+  link?: string
 }
 
 export const typingRoles = [
@@ -38,7 +43,7 @@ export const projects: Project[] = [
     id: 1,
     title: "Industrial Robotic Arm Animation",
     category: "Mechanical",
-    description: "High-detail 3D animation of a 6-axis industrial robotic arm performing precision assembly tasks. Includes realistic material, motion blur, and factory environment lighting.",
+    description: "High-detail 3D animation of a 6-axis industrial robotic arm performing precision assembly tasks.",
     tools: ["Blender", "Substance Painter", "After Effects"],
     year: 2025,
     image: "/images/robotic-arm.jpg",
@@ -49,7 +54,7 @@ export const projects: Project[] = [
     id: 2,
     title: "Automotive Product Visualization",
     category: "Product Animation",
-    description: "Cinematic product reveal for an electric vehicle chassis. Focused on material fidelity, exploded views, and technical cutaways.",
+    description: "Cinematic product reveal for an electric vehicle chassis.",
     tools: ["Blender", "Cinema 4D", "Photoshop"],
     year: 2025,
     image: "/images/ev-chassis.jpg",
@@ -60,7 +65,7 @@ export const projects: Project[] = [
     id: 3,
     title: "Factory Assembly Line Simulation",
     category: "Industrial Viz",
-    description: "Real-time capable 3D simulation of a complete production line for process optimization and presentations.",
+    description: "Real-time capable 3D simulation of a complete production line.",
     tools: ["Blender", "Unreal Engine 5", "Houdini"],
     year: 2024,
     image: "/images/assembly-line.jpg",
@@ -71,7 +76,7 @@ export const projects: Project[] = [
     id: 4,
     title: "Roblox Experience Prototype",
     category: "Game Dev",
-    description: "Interactive Roblox experience with custom animations, scripting, and immersive environments.",
+    description: "Interactive Roblox experience with custom animations and scripting.",
     tools: ["Roblox Studio", "Lua", "Blender"],
     year: 2024,
     image: "/images/roblox.jpg",
@@ -82,7 +87,7 @@ export const projects: Project[] = [
     id: 5,
     title: "Heavy Machinery Exploded View",
     category: "Mechanical",
-    description: "Detailed technical animation showing internal components of industrial heavy machinery.",
+    description: "Detailed technical animation of industrial heavy machinery.",
     tools: ["Blender", "Maya", "Substance"],
     year: 2024,
     image: "/images/heavy-machinery.jpg",
@@ -93,7 +98,7 @@ export const projects: Project[] = [
     id: 6,
     title: "Portfolio Website UI",
     category: "Web",
-    description: "Interactive personal portfolio with 3D-inspired design, smooth animations, and responsive layout.",
+    description: "Interactive portfolio with 3D-inspired design and smooth animations.",
     tools: ["Vue", "TypeScript", "CSS", "HTML"],
     year: 2025,
     image: "/images/portfolio-web.jpg",
@@ -108,35 +113,45 @@ export const certificates: Certificate[] = [
     title: "Blender Fundamentals",
     issuer: "Blender Foundation / Online Course",
     year: 2024,
-    description: "Core modeling, materials, lighting and animation principles in Blender."
+    description: "Core modeling, materials, lighting and animation principles in Blender.",
+    image: "https://images.unsplash.com/photo-1586281380349-632531db7ed4?w=800&q=80",
+    link: ""
   },
   {
     id: 2,
     title: "3D Animation Specialist",
     issuer: "Industry Training Program",
     year: 2023,
-    description: "Advanced character & technical animation techniques for industrial applications."
+    description: "Advanced character & technical animation techniques for industrial applications.",
+    image: "https://images.unsplash.com/photo-1562654501-a0ccc0fc3fb1?w=800&q=80",
+    link: ""
   },
   {
     id: 3,
     title: "Web Development Basics",
     issuer: "Self-paced / Online",
     year: 2024,
-    description: "HTML, CSS, JavaScript fundamentals and modern frontend practices."
+    description: "HTML, CSS, JavaScript fundamentals and modern frontend practices.",
+    image: "https://images.unsplash.com/photo-1434030216411-0b793f4b4173?w=800&q=80",
+    link: ""
   },
   {
     id: 4,
     title: "Roblox Studio Creator",
     issuer: "Roblox Education",
     year: 2023,
-    description: "Building interactive experiences, scripting with Lua, and publishing games."
+    description: "Building interactive experiences, scripting with Lua, and publishing games.",
+    image: "https://images.unsplash.com/photo-1511512578047-dfb367046420?w=800&q=80",
+    link: ""
   },
   {
     id: 5,
     title: "Voice Acting Fundamentals",
     issuer: "Voice Performance Workshop",
     year: 2024,
-    description: "Vocal technique, character performance, and recording for animation & media."
+    description: "Vocal technique, character performance, and recording for animation & media.",
+    image: "https://images.unsplash.com/photo-1478737270239-2f02b77fc618?w=800&q=80",
+    link: ""
   }
 ]
 
